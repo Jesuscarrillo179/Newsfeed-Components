@@ -36,26 +36,19 @@ let menuItems = [
 
 function createMenu(menulist){
 
-  //creates elements
+  //creates Parent Element
   const menuDiv = document.createElement('div');
-  const list = document.createElement('ul');
-  
-
-  // class
   menuDiv.classList.add('menu');
 
-  // text content
-  const ulList = menulist.forEach(item => {
+  // list text content
+  const list = document.createElement('ul');
+  menulist.forEach(item => {
     const listItem = document.createElement('li');
-     listItem.textContent = item
-     list.appendChild(listItem)
-     console.log(item);
- }); 
+    listItem.textContent = item
+    list.appendChild(listItem)
+  }); 
 
-
-  // structure
   menuDiv.appendChild(list);
-
 
   //button
   document.querySelector('.menu-button').addEventListener('click', () => {

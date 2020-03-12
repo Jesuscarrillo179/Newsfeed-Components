@@ -146,6 +146,7 @@ function createCard(title, date, fparagraph, sparagraph, tparagraph){
   articleCard.appendChild(paragraphTwo);
   articleCard.appendChild(paragraphThree);
   articleCard.appendChild(expButton);
+  
   //button
   expButton.addEventListener('click', event => {
     articleCard.classList.toggle('article-open');
